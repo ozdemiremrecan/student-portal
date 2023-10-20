@@ -1,0 +1,21 @@
+
+.middle{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border-radius: 20%;
+}
+body,.btn{
+    background-color: #00264b;
+}
+.btn:hover{
+    background-color: #190482;
+}
+.btn:focus{
+    background-color: #190482 !important;
+}
