@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *");  // Tüm kaynaklardan erişime izin verir
+header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
+header("Access-Control-Allow-Methods: GET, POST");  // Sadece GET ve POST metodlarına izin verir
 $config["dbHost"]           = "localhost";
 $config["dbUsername"]       = "root";
 $config["dbPassword"]       = "";

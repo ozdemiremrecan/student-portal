@@ -5,12 +5,11 @@ export default function Error() {
     const navigate=useNavigate();
   return (
     <>
-        <div className='middle'>
-            <div className='containter bg-white border rounded'>
-                <h1 className='p-5'>404 Error, please return homepage</h1>
-                <div className='me-auto ms-auto'>
-                    <button onClick={()=>navigate('/')} className='btn text-white p-3'>Click</button>
-                </div>
+        <div className="vh-100 d-flex justify-content-center align-items-center" style={{ backgroundColor: '#00264b' }}>
+            <div className="bg-white p-5 rounded shadow text-center">
+                <h1 className="display-3 mb-4">404</h1>
+                <p className="lead">Maalesef aradığınız sayfayı bulamadık.</p>
+                <button className="btn btn-primary mt-3" onClick={()=>navigate('/')}>Ana Sayfaya Dön</button>
             </div>
         </div>
     </>

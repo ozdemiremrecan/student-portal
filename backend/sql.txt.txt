@@ -1,0 +1,40 @@
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL
+);
+
+
+
+CREATE TABLE courses (
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+
+
+CREATE TABLE student_courses (
+    enrollment_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT NOT NULL,
+    course_id INT NOT NULL,
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+
+
+INSERT INTO students (username, password, first_name, last_name) VALUES ('yusuf', 'yusuf123', 'Yusuf', 'Aktan');
+INSERT INTO students (username, password, first_name, last_name) VALUES ('ogrenci2', 'sifre2', 'Emre Can', 'Özdemir');
+
+
+
+INSERT INTO courses (course_name, description) VALUES ('Javascript', 'Temel javascript dersi');
+INSERT INTO courses (course_name, description) VALUES ('PHP', 'Temel php dersi');
+
+
+
+INSERT INTO student_courses (student_id, course_id) VALUES (1, 1);
+INSERT INTO student_courses (student_id, course_id) VALUES (2, 2);
