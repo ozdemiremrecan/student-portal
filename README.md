@@ -5,3 +5,4 @@
 - Bu klasörün içine php dosyaları atılacak.
 - Sonrasında xampp control app açılıp apache ve mysql serverları başlatılacak
 - Sonrasında sql.txt içerisindeki sorgular, localhost/phpmyadmin adresinde yukarıda sql yazan yere tıklanıp yapıştırılacak
+- Front-end içinde react projesi açıldıktan sonra önce npm install  sonrasında da npm start yaptığınızda proje çalışacak
