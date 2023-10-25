@@ -15,6 +15,5 @@ $config["error"]["102"]     = "Bir veya birden fazla parametre eksik veya hatal�
 $config["error"]["103"]     = "Öğrenci bu kursa zaten kayıtlı.";
 $config["error"]["104"]     = "Kayıt sırasında hata.";
 $config["error"]["105"]     = "Silme sırasında hata.";
-$config["error"]["106"]     = "Öğrenci bu kursa kayıtlı değil.";
-$config["error"]["107"]     = "Süresi bitmiş token.";
+$config["error"]["104"]     = "Öğrenci bu kursa kayıtlı değil.";
 ?>
